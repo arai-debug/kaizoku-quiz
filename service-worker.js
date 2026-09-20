@@ -1,4 +1,4 @@
-var CACHE = 'onepiece-quiz-v2';
+var CACHE = 'kaizoku-quiz-v3';
 var ASSETS = [
   './',
   './index.html',

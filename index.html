@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="ワンピースクイズ">
+  <meta name="apple-mobile-web-app-title" content="かいぞくクイズ">
   <meta name="theme-color" content="#FFCB05">
   <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="style.css">
-  <title>ONE PIECE QUIZ</title>
+  <title>かいぞく クイズ</title>
 </head>
 <body>
   <!-- ハーフトーン+集中線の背景 -->
@@ -27,33 +30,33 @@
           <polygon points="100,0 115,70 200,55 140,110 195,170 110,135 100,200 90,135 5,170 60,110 0,55 85,70" fill="#FFCB05" stroke="#1a1a1a" stroke-width="6" stroke-linejoin="round"/>
         </svg>
         <div class="logo-text">
-          <span class="logo-one">ONE</span>
-          <span class="logo-piece">PIECE</span>
+          <span class="logo-one">かいぞく</span>
         </div>
       </div>
-      <div class="logo-quiz">QUIZ<span class="bang">!!</span></div>
+      <div class="logo-quiz">クイズ<span class="bang">!!</span></div>
 
       <div class="jolly-mascot">
         <svg viewBox="0 0 160 200" width="150" height="180">
-          <!-- straw hat -->
-          <ellipse cx="80" cy="58" rx="65" ry="14" fill="#FFCB05" stroke="#1a1a1a" stroke-width="4"/>
-          <ellipse cx="80" cy="38" rx="34" ry="26" fill="#FFCB05" stroke="#1a1a1a" stroke-width="4"/>
-          <rect x="50" y="42" width="60" height="11" fill="#E63946" stroke="#1a1a1a" stroke-width="3"/>
-          <!-- skull -->
-          <circle cx="80" cy="115" r="42" fill="#fff" stroke="#1a1a1a" stroke-width="4"/>
-          <ellipse cx="65" cy="110" rx="9" ry="11" fill="#1a1a1a"/>
-          <ellipse cx="95" cy="110" rx="9" ry="11" fill="#1a1a1a"/>
-          <path d="M 70 135 Q 75 142 80 138 Q 85 142 90 135" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <line x1="73" y1="148" x2="73" y2="155" stroke="#1a1a1a" stroke-width="3"/>
-          <line x1="80" y1="148" x2="80" y2="157" stroke="#1a1a1a" stroke-width="3"/>
-          <line x1="87" y1="148" x2="87" y2="155" stroke="#1a1a1a" stroke-width="3"/>
-          <!-- crossbones -->
-          <line x1="30" y1="160" x2="130" y2="180" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round"/>
-          <line x1="130" y1="160" x2="30" y2="180" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round"/>
-          <circle cx="28" cy="160" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
-          <circle cx="132" cy="160" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
-          <circle cx="28" cy="180" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
-          <circle cx="132" cy="180" r="6" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+          <!-- きらきら -->
+          <path d="M28 44 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z" fill="#FFF" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M132 34 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" fill="#FFF" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+          <!-- ふた -->
+          <path d="M22 108 A58 46 0 0 1 138 108 Z" fill="#D98E3C" stroke="#1a1a1a" stroke-width="4" stroke-linejoin="round"/>
+          <!-- はこ -->
+          <rect x="22" y="108" width="116" height="62" rx="6" fill="#C57C30" stroke="#1a1a1a" stroke-width="4"/>
+          <!-- かなぐ(たて) -->
+          <rect x="70" y="70" width="20" height="100" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
+          <!-- かなぐ(よこ) -->
+          <rect x="22" y="100" width="116" height="14" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
+          <!-- かぎあな -->
+          <rect x="66" y="116" width="28" height="26" rx="5" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
+          <circle cx="80" cy="126" r="5" fill="#1a1a1a"/>
+          <rect x="77" y="126" width="6" height="10" fill="#1a1a1a"/>
+          <!-- こばん -->
+          <circle cx="16" cy="188" r="11" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
+          <circle cx="40" cy="194" r="8" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
+          <circle cx="144" cy="188" r="11" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
+          <circle cx="120" cy="194" r="8" fill="#FFCB05" stroke="#1a1a1a" stroke-width="3"/>
         </svg>
       </div>
     </div>
@@ -62,7 +65,8 @@
       <span class="btn-text">はじめる</span>
       <span class="btn-arrow">▶</span>
     </button>
-    <div class="title-tagline">かいぞくおうに おれはなるッ!!</div>
+    <div class="title-tagline">たからばこを あけよう!!</div>
+    <p class="disclaimer">ファンが つくった ひこうしきの クイズです。<br>しゅうえいしゃ・げんさくしゃとは かんけい ありません。</p>
   </section>
 
   <!-- 2. メニュー画面 -->
